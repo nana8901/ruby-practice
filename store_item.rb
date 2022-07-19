@@ -17,43 +17,21 @@
 # p "The #{item1[:name]} is #{item1[:color]}, and is $#{item1[:price]}"
 
 class Item
-  def initialize(name, color, price)
-    @name = name
-    @color = color
-    @price = price
+  def initialize(input_hash)
+    @name = input_hash[:name]
+    @color = input_hash[:color]
+    @price = input_hash[:price]
   end
+  attr_reader :name, :color, :price
+  attr_writer :name, :color, :price
 
   def print_info
     p "#{@name} is #{@color} and costs #{@price}"
   end
 
-  def name
-    return @name
-  end
-
-  def color
-    return @color
-  end
-
-  def price
-    return @price
-  end
-
-  def name=(new_name)
-    @name = new_name
-  end
-
-  def color=(new_color)
-    @color = new_color
-  end
-
-  def price=(new_price)
-    @price = new_price
-  end
-
 end
-
-item1 = Item.new("bike", "green", 46.99)
+newitem = {:name => "bike", color:"green", price:46.99}
+item1 = Item.new(newitem)
 item1.print_info
 # puts item1.name
 # item1.name= "shirt"
