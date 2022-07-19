@@ -61,3 +61,5 @@ item1.print_info
 puts item1.price
 item1.price= 19.99
 puts item1.price
+puts item1.name
+puts item1.color
