@@ -1,0 +1,9 @@
+2 methods; roll and score
+roll needs to take number of pins knocked down
+score is called at the end, return total
+maybe class for player? have turns as hidden value
+would roll take an integer?
+10th turn has to check for extra rolls
+after 10th turn return score
+does roll need to ask for both rolls
+
