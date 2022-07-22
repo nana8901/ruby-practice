@@ -6,7 +6,7 @@ while true
   if define == "stopstop"
     break
   end
-  defined = HTTP.get("https://api.wordnik.com/v4/word.json/#{define}/definitions?limit=200&includeRelated=false&useCanonical=false&includeTags=false&api_key=7rzrusqms9ysbvd11ihq7idgk3slkzghxnqc6k6rmn3520mq9").parse(:json)
+  defined = HTTP.get("https://api.wordnik.com/v4/word.json/#{define}/definitions?limit=200&includeRelated=false&useCanonical=false&includeTags=false&api_key=API KEY").parse(:json)
   
 
   index = 0
